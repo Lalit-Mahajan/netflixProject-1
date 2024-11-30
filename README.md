@@ -95,5 +95,5 @@ To monitor the application:
 ```
 
 ### OUTPUT:
-![Alt text]()
+![Alt text](Netflix.jpeg)
 
