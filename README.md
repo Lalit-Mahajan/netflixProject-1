@@ -1,8 +1,8 @@
-# DEPLOY AN NETFLIX APPLICATION IN TOMCAT SERVER USING CI/CD
+# DEPLOY AN NETFLIX APPLICATION IN TOMCAT SERVER USING CI/CD 🎬🚀
 
 This project demonstrates the deployment of a Netflix-like application using a Continuous Integration and Continuous Deployment (CI/CD) pipeline. The deployment process involves multiple technologies such as HCP (HashiCorp Cloud Platform), Jenkins, Maven, Nexus, Tomcat, and Grafana. The following README explains the theory behind the deployment and the essential commands used to deploy the application.
 
-## Project Overview
+## Project Overview 🌎
 
 The goal of this project is to deploy a Netflix-like application on a Tomcat server using a CI/CD pipeline that is automated with Jenkins. We use the following tools to manage the deployment:
 
@@ -14,7 +14,7 @@ The goal of this project is to deploy a Netflix-like application on a Tomcat ser
 - **Tomcat**: The web server used to deploy the application.
 - **Grafana & Prometheus**: For monitoring and visualizing system metrics.
 
-## Prerequisites
+## Prerequisites 🛠️
 
 Before starting with the deployment process, make sure you have the following:
 
@@ -23,9 +23,9 @@ Before starting with the deployment process, make sure you have the following:
 - Installed tools: **Terraform**, **Maven**, **Jenkins**, **Tomcat**, **Nexus**, **Grafana**, and **Prometheus**.
 - Access to the servers where Jenkins, Tomcat, Nexus, and Grafana are running.
 
-## Steps for Deployment
+## Steps for Deployment 🔄
 
-### Step 1: Provision Infrastructure with HCP
+### Step 1: Provision Infrastructure with HCP 🪩
 
 - **Create an HCP account** and log in to manage cloud resources.
 - **Create a GitHub repository** to store your code.
@@ -38,7 +38,7 @@ terraform plan
 terraform apply
 
 ```
-### Step 2: Configure Servers (Jenkins, Tomcat, Nexus, Grafana)
+### Step 2: Configure Servers (Jenkins, Tomcat, Nexus, Grafana) 💻
 1. Jenkins : vim jenkins.sh --> sh jenkins.sh
 2. Tomcat  : vim tomcat.sh --> sh tomcat.sh
 3. Nexus   : vim nexus.sh --> sh nexus.sh
@@ -56,7 +56,7 @@ Configure the repository (public or private access).
 Save the repository settings.
 
 ```
-### Step 4: Build and Deploy the Application using Jenkins
+### Step 4: Build and Deploy the Application using Jenkins 🏗️
 
 In Jenkins, create a pipeline job that automates the process of building, testing, and deploying the application. The Jenkins pipeline will follow these stages:
 
@@ -67,7 +67,7 @@ In Jenkins, create a pipeline job that automates the process of building, testin
 5. Nexus: Upload the artifact to the Nexus repository.
 6. Deploy: Deploy the WAR file to the Tomcat server.
 
-### Step 5: Deploy the Application to Tomcat
+### Step 5: Deploy the Application to Tomcat 🐱
 To deploy the WAR file to Tomcat:
 
 Access the Tomcat Manager through the browser at http://<public-ip>:8080/manager/html.
@@ -78,7 +78,7 @@ Use the Tomcat Manager interface to deploy the WAR file.
 ```
 Go to Manager App → Deploy → Select the WAR file from the Nexus repository → Deploy.
 ```
-### Step 6: Monitor the Application with Prometheus and Grafana
+### Step 6: Monitor the Application with Prometheus and Grafana 📊
 To monitor the application:
 
 1. Install and configure Prometheus to collect metrics from the Tomcat server.
@@ -94,6 +94,6 @@ To monitor the application:
 --> Import the Prometheus Dashboard ID 1860 for monitoring.
 ```
 
-### OUTPUT:
+### OUTPUT:🎯
 ![Alt text](Netflix.jpeg)
 
