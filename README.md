@@ -50,10 +50,10 @@ terraform apply
 
 **Commands in Nexus UI:**
 ```
-Go to Repository Settings → Repositories → Create Repository.
-Choose maven2 (hosted) as the repository type.
-Configure the repository (public or private access).
-Save the repository settings.
+--> Go to Repository Settings → Repositories → Create Repository.
+--> Choose maven2 (hosted) as the repository type.
+--> Configure the repository (public or private access).
+--> Save the repository settings.
 
 ```
 ### Step 4: Build and Deploy the Application using Jenkins 🏗️
